@@ -33,7 +33,7 @@ RUN echo "install packages" \
  && useradd --system --uid 2000 --home-dir "${UT2004_HOME}" --create-home --gid ut2004 ut2004 \
  && echo "install ut2004" \
  && install.sh \
-    https://www.dropbox.com/s/mijyaxho8ktzuxq/dedicatedserver3339-bonuspack-lnxpatch.7z?dl=1 \
+    https://github.com/reflectivecode/ut2004/releases/download/v3339/dedicatedserver3339-bonuspack-lnxpatch.7z \
     199093da475daaf9b4d660e551d2040c4cbebb6c \
     dedicatedserver3339-bonuspack-lnxpatch.7z \
     "${UT2004_DIR}" \
