@@ -16,4 +16,4 @@ if [ "${COMPRESS_DIR:-}" != "" ]; then
 fi
 
 echo "Running run-user.sh as ut2004 user"
-gosu ut2004 run-user.sh
+exec gosu ut2004 run-user.sh
