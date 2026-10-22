@@ -21,7 +21,6 @@ config.sh
 compress.sh
 
 echo "Setting permissions on ${UT2004_HOME}/.ut2004"
-mkdir -p "${UT2004_HOME}/.ut2004"
 chown -R ut2004:ut2004 "${UT2004_HOME}/.ut2004"
 chmod -R a=,u=rwX "${UT2004_HOME}/.ut2004"
 
