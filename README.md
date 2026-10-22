@@ -60,6 +60,10 @@ Settings and downloaded addons are stored in `/home/ut2004/.ut2004`. Mount a vol
 | `DOWNLOAD_n_SRC_DIR` | `.` | Only extract this directory from the archive |
 | `COMPRESS_DIR` | | If set, addons are compressed to `.uz2` files in this directory |
 
+### ini settings
+
+Each `CONFIG_n` is applied on every startup. If a `CONFIG_n` value can't be parsed, such as `Key` without `=Value`, the container stops with an `invalid modification` error instead of starting without that setting.
+
 ### 32-bit and 64-bit
 
 The 32-bit server is the default because it is the most widely tested build and works with addons that include 32-bit native libraries. Set `UT2004_ARCH=64` to run the 64-bit server instead.
