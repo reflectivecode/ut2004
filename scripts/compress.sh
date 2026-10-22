@@ -11,7 +11,7 @@ fi
 echo "Starting compression"
 
 # find all files to compress
-find "${UT2004_HOME}/.ut2004" -type f -name "*.ukx" -o -name "*.ka" -o -name "*.ut2" -o -name "*.uax" -o -name "*.usx" -o -name "*.u" -o -name "*.utx" | while read sourcepath; do
+find "${UT2004_HOME}/.ut2004" -type f \( -name "*.ukx" -o -name "*.ka" -o -name "*.ut2" -o -name "*.uax" -o -name "*.usx" -o -name "*.u" -o -name "*.utx" \) | while read sourcepath; do
     filename=$(basename "${sourcepath}")          # get source filename without directory
     destination="${COMPRESS_DIR}/${filename}.uz2" # compressed file's path
     sourcedate=$(stat -c %Y "${sourcepath}")      # get source file's modification date
