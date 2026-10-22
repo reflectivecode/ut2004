@@ -55,7 +55,7 @@ Settings and downloaded addons are stored in `/home/ut2004/.ut2004`. Mount a vol
 | `CONFIG_n_DELIMIT` | `;` | Separator used in `CONFIG_n` |
 | `DOWNLOAD_n_URL` | | Addon archive to download and install (n = 1 to 100) |
 | `DOWNLOAD_n_SHA1` | | SHA1 checksum of the archive; required with `DOWNLOAD_n_URL` |
-| `DOWNLOAD_n_FILE` | | Filename of the archive, used to detect its type (.zip, .7z, .tar, .tar.gz, .tar.bz2); required with `DOWNLOAD_n_URL` |
+| `DOWNLOAD_n_FILE` | | Filename to save the download as; required with `DOWNLOAD_n_URL`. Supported archives: .zip, .7z, .tar, .tar.gz, .tar.bz2 |
 | `DOWNLOAD_n_DEST_DIR` | `.` | Directory under `/home/ut2004/.ut2004` to extract into |
 | `DOWNLOAD_n_SRC_DIR` | `.` | Only extract this directory from the archive |
 | `COMPRESS_DIR` | | If set, addons are compressed to `.uz2` files in this directory |
