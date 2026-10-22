@@ -52,7 +52,7 @@ RUN echo "install packages" \
 
 WORKDIR ${UT2004_DIR}/System
 
-EXPOSE 7777/udp 7778/udp 28902 80
+EXPOSE 7777/udp 7778/udp 80
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
